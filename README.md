@@ -1,11 +1,25 @@
 # 14-homework - Lori Timmons 
 
 ## Description 
+Welcome to a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts. 
 
 ## Installation
+You’ll need the following;
+* express-handlebars 
+* MySQL2 
+* Express.js 
+* dotenv package 
+* bcrypt package 
+* express-session 
+* or simply run an npm i once you clone the repo 
+
 
 ## Usage 
+This site can be used to create a tech blog for developers. 
 
-## Test
+## Contact / Questions
 
-## Contact / Questions 
+  #### Contact Me @: lorietimmons@gmail.com<br>
+  #### GitHub Profile: LoriTimmons <br>
+  #### GitHub Repo Link: https://github.com/LoriTimmons/14-homework <br>
+  #### Heroku Link: Coming Soon! 
