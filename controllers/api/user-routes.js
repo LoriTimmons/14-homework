@@ -101,6 +101,7 @@ router.post('/login', (req, res) => {
   });
 
 // Update a user
+// Add exclude password
 router.put("/:id", (req, res) => {
     User.update(req.body, {
       individualHooks: true,
