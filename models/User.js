@@ -46,12 +46,14 @@ User.init({
         //         userInfo.password = await bcrypt.hash(userInfo.password, 10);
         //     })
         // }
-
+},
+ {
   sequelize,
   timestamp: false,
   freezeTableName: true,
   underscored: true,
   modelName: "user",
-});
+ }
+ );
 
 module.exports = User;
