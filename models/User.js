@@ -1,13 +1,12 @@
-// ? for line one 
+// ? for line one
 // const happy = require("sequelize")
-// build blog and comment 
-
+// build blog and comment
 
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcrypt");
 
-// User Model 
+// User Model
 // Need to add Method to run on instance data to check P/W (per user)
 class User extends Model {}
 User.init({
@@ -16,7 +15,7 @@ User.init({
     allowNull: false,
     unique: true,
     primaryKey: true,
-    autoIncrement: true
+    autoIncrement: true,
   },
 
   username: {
@@ -31,6 +30,8 @@ User.init({
     validate: {
       isEmail: true,
     },
+  },
+
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -39,19 +40,18 @@ User.init({
       },
     },
 
-    // bcrypt - read the notes -- May need to add more 
-    //     hooks: {
-    //         beforeCreate: async(userInfo => {
-    //             userInfo.password = await bcrypt.hash(userInfo.password, 10);
-    //         })
-    //     }
-    },
-    
-    sequelize,
-    timestamp: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: "user",
+    // bcrypt - read the notes -- May need to add more
+        // hooks: {
+        //     beforeCreate: async(userInfo => {
+        //         userInfo.password = await bcrypt.hash(userInfo.password, 10);
+        //     })
+        // }
+
+  sequelize,
+  timestamp: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: "user",
 });
 
 module.exports = User;
