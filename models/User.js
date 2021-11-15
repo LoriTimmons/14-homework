@@ -40,11 +40,11 @@ User.init({
     },
 
     // bcrypt - read the notes -- May need to add more 
-        hooks: {
-            beforeCreate: async(userInfo => {
-                userInfo.password = await bcrypt.hash(userInfo.password, 10);
-            })
-        }
+    //     hooks: {
+    //         beforeCreate: async(userInfo => {
+    //             userInfo.password = await bcrypt.hash(userInfo.password, 10);
+    //         })
+    //     }
     },
     
     sequelize,
