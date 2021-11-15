@@ -8,7 +8,13 @@ const bcrypt = require("bcrypt");
 
 // User Model
 // Need to add Method to run on instance data to check P/W (per user)
-class User extends Model {}
+class User extends Model {
+  checkPassword(loginPw) {
+      // using [this] keyword the user's properties (including password) can be accessed
+      return bcrypt.compareSync(loginPw, this.password);
+  }
+}
+
 User.init({
   id: {
     type: DataTypes.INTEGER,
