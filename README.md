@@ -17,9 +17,4 @@ You’ll need the following;
 ## Usage 
 This site can be used to create a tech blog for developers. 
 
-## Contact / Questions
-
-  #### Contact Me @: lorietimmons@gmail.com<br>
-  #### GitHub Profile: LoriTimmons <br>
-  #### GitHub Repo Link: https://github.com/LoriTimmons/14-homework <br>
-  #### Heroku Link: Coming Soon! 
+## Contact / Ques
